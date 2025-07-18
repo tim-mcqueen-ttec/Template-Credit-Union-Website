@@ -1,0 +1,301 @@
+# ==============================================
+# .gitignore for RCU-Cobrowse Credit Union Project
+# ==============================================
+
+# ============================================
+# SENSITIVE INFORMATION - SECURITY CRITICAL
+# ============================================
+
+# Environment Variables & Configuration
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.env
+
+# API Keys and Secrets
+secrets.json
+config/secrets.json
+config/production.json
+config/development.json
+
+# Database Credentials
+database.json
+db.json
+*.db-journal
+
+# Authentication & Session Files
+auth.json
+sessions/
+*.session
+*.key
+*.pem
+*.p12
+*.pfx
+
+# SSL/TLS Certificates
+*.crt
+*.cer
+*.ca-bundle
+*.p7b
+*.p7s
+*.spc
+
+# Cloudflare Secrets
+wrangler.toml
+.dev.vars
+*.vars
+
+# ============================================
+# FINANCIAL & CUSTOMER DATA
+# ============================================
+
+# Customer Information (if any)
+customer-data/
+member-data/
+*.csv
+*.xlsx
+*.xls
+account-data/
+financial-reports/
+
+# Backup Files
+*.backup
+*.bak
+*.dump
+*.sql
+
+# ============================================
+# DEVELOPMENT & BUILD ARTIFACTS
+# ============================================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Build Outputs
+dist/
+build/
+.output/
+.nuxt/
+.next/
+.cache/
+.temp/
+.tmp/
+
+# Cloudflare Workers
+worker-configuration.json
+.wrangler/
+.wrangler-state/
+
+# ============================================
+# EDITOR & IDE FILES
+# ============================================
+
+# Visual Studio Code
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/tasks.json
+.history/
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# OPERATING SYSTEM FILES
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Linux
+.directory
+.Trash-*
+
+# ============================================
+# LOGS & MONITORING
+# ============================================
+
+# Application Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime Logs
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage Reports
+coverage/
+*.lcov
+.nyc_output/
+
+# ============================================
+# TEMPORARY & CACHE FILES
+# ============================================
+
+# Package Manager Cache
+.npm/
+.yarn/
+.pnp/
+.pnp.js
+.yarn/install-state.gz
+
+# ESLint Cache
+.eslintcache
+
+# TypeScript Cache
+*.tsbuildinfo
+
+# Parcel Cache
+.parcel-cache/
+
+# ============================================
+# DEPLOYMENT & CI/CD
+# ============================================
+
+# Deployment Keys
+deploy_key
+deploy_key.pub
+*.deploy
+
+# CI/CD Artifacts
+.github/workflows/secrets.yml
+.gitlab-ci-local/
+.circleci/config.local.yml
+
+# ============================================
+# TESTING & DEVELOPMENT
+# ============================================
+
+# Test Coverage
+coverage/
+.coverage
+htmlcov/
+test-results/
+
+# Local Development
+.local/
+local-config.json
+
+# ============================================
+# DOCUMENTATION DRAFTS
+# ============================================
+
+# Work in Progress Documentation
+*.draft.md
+*-draft.md
+TODO.md
+NOTES.md
+
+# ============================================
+# MISCELLANEOUS
+# ============================================
+
+# Compressed Files (if containing sensitive data)
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Auto-generated Files
+auto-generated/
+generated/
+
+# ============================================
+# PROJECT SPECIFIC
+# ============================================
+
+# Credit Union Specific
+member-portal-config.json
+banking-api-keys.json
+compliance-reports/
+audit-logs/
+
+# Local Development Overrides
+wrangler.local.toml
+local.wrangler.toml
+
+# Custom Scripts with Credentials
+scripts/deploy.sh
+scripts/secrets.sh
+
+# MCP Server Configurations
+.mcp.json
+
+# Node Modules
+node_modules/
+
+# Randomly Generated Files
+NUL
+
+# PNPM files
+pnpm-lock.yaml
+pnpm-workspace.yaml
+
+# ============================================
+# SECURITY NOTES
+# ============================================
+# 
+# IMPORTANT: This .gitignore protects against:
+# - Accidentally committing API keys, passwords, tokens
+# - Exposing customer/member data
+# - Revealing internal configuration details
+# - Committing sensitive financial information
+# - Sharing development credentials
+# 
+# REMEMBER TO:
+# - Use Cloudflare Workers secrets for sensitive data
+# - Never hardcode credentials in source code
+# - Use environment variables for configuration
+# - Regularly audit committed files for sensitive data
+# - Keep this .gitignore file updated
+# 
+# ============================================

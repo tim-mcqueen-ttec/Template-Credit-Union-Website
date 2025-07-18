@@ -1,0 +1,14 @@
+{
+	"name": "rcu-cobrowse",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev"
+	},
+	"devDependencies": {
+		"@anthropic-ai/claude-code": "^1.0.55",
+		"wrangler": "^4.25.0"
+	}
+}

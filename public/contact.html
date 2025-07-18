@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us - Unnamed Credit Union</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<a href="#main-content" class="skip-link">Skip to main content</a>
+		<header class="header">
+			<div class="nav-container">
+				<a href="index.html" class="logo">Unnamed Credit Union</a>
+				<nav role="navigation" aria-label="Main navigation">
+					<ul class="nav-menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				<button class="mobile-menu-toggle">☰</button>
+			</div>
+		</header>
+
+		<main class="main-content" id="main-content">
+			<section class="hero" aria-label="Contact banner" style="background: linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url('https://images.unsplash.com/photo-1486312338219-ce68e2c6b1d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80');">
+				<div class="container">
+					<h1 class="fade-in">Contact Us</h1>
+					<p class="fade-in">We're here to help you with all your financial needs. Get in touch with us today!</p>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<h2 class="section-title fade-in">Get in Touch</h2>
+					<div class="grid grid-2">
+						<div class="fade-in">
+							<h3 class="text-primary">Send us a Message</h3>
+							<form class="contact-form" id="contact-form" aria-label="Contact form">
+								<div class="form-group">
+									<label for="name">Full Name *</label>
+									<input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-help">
+									<div id="name-help" class="sr-only">Enter your full name</div>
+								</div>
+								<div class="form-group">
+									<label for="email">Email Address *</label>
+									<input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-help">
+									<div id="email-help" class="sr-only">Enter a valid email address</div>
+								</div>
+								<div class="form-group">
+									<label for="phone">Phone Number</label>
+									<input type="tel" id="phone" name="phone" aria-describedby="phone-help">
+									<div id="phone-help" class="sr-only">Optional phone number</div>
+								</div>
+								<div class="form-group">
+									<label for="subject">Subject *</label>
+									<select id="subject" name="subject" required aria-required="true" aria-describedby="subject-help">
+										<option value="">Select a subject</option>
+										<option value="general">General Inquiry</option>
+										<option value="accounts">Account Services</option>
+										<option value="loans">Loan Information</option>
+										<option value="online-banking">Online Banking</option>
+										<option value="membership">New Membership</option>
+										<option value="complaint">Complaint</option>
+										<option value="other">Other</option>
+									</select>
+									<div id="subject-help" class="sr-only">Choose the topic of your inquiry</div>
+								</div>
+								<div class="form-group">
+									<label for="message">Message *</label>
+									<textarea id="message" name="message" rows="5" required aria-required="true" aria-describedby="message-help"></textarea>
+									<div id="message-help" class="sr-only">Enter your detailed message</div>
+								</div>
+								<button type="submit" class="submit-btn">Send Message</button>
+							</form>
+						</div>
+						<div class="fade-in">
+							<h3 class="text-primary">Contact Information</h3>
+							<div class="card">
+								<div class="card-icon">📍</div>
+								<h4>Main Branch</h4>
+								<p>123 Main Street<br>
+								Anytown, ST 12345</p>
+								<p><strong>Phone:</strong> (555) 123-4567<br>
+								<strong>Fax:</strong> (555) 123-4568<br>
+								<strong>Email:</strong> info@unnamedcu.org</p>
+							</div>
+							<div class="card">
+								<div class="card-icon">🕒</div>
+								<h4>Branch Hours</h4>
+								<p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM<br>
+								<strong>Saturday:</strong> 9:00 AM - 1:00 PM<br>
+								<strong>Sunday:</strong> Closed</p>
+								<p><strong>Drive-Through:</strong><br>
+								Monday - Friday: 8:00 AM - 6:00 PM<br>
+								Saturday: 8:00 AM - 2:00 PM</p>
+							</div>
+							<div class="card">
+								<div class="card-icon">📞</div>
+								<h4>Member Services</h4>
+								<p><strong>Phone Banking:</strong> (555) 123-BANK<br>
+								Available 24/7</p>
+								<p><strong>Online Banking Support:</strong><br>
+								(555) 123-4567 ext. 2<br>
+								Monday - Friday: 8:00 AM - 8:00 PM</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" style="background-color: white;">
+				<div class="container">
+					<h2 class="section-title fade-in">Branch Locations</h2>
+					<div class="grid grid-3">
+						<div class="card fade-in">
+							<div class="card-icon">🏢</div>
+							<h3>Main Branch</h3>
+							<p><strong>Address:</strong><br>
+							123 Main Street<br>
+							Anytown, ST 12345</p>
+							<p><strong>Phone:</strong> (555) 123-4567</p>
+							<p><strong>Services:</strong> Full service, ATM, Drive-through, Safe deposit boxes</p>
+						</div>
+						<div class="card fade-in">
+							<div class="card-icon">🏪</div>
+							<h3>Downtown Branch</h3>
+							<p><strong>Address:</strong><br>
+							456 Oak Avenue<br>
+							Anytown, ST 12345</p>
+							<p><strong>Phone:</strong> (555) 123-4568</p>
+							<p><strong>Services:</strong> Full service, ATM, Business banking</p>
+						</div>
+						<div class="card fade-in">
+							<div class="card-icon">🏬</div>
+							<h3>Eastside Branch</h3>
+							<p><strong>Address:</strong><br>
+							789 Pine Road<br>
+							Anytown, ST 12345</p>
+							<p><strong>Phone:</strong> (555) 123-4569</p>
+							<p><strong>Services:</strong> Full service, ATM, Drive-through</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<h2 class="section-title fade-in">ATM Network</h2>
+					<div class="grid grid-2">
+						<div class="card fade-in">
+							<div class="card-icon">🏧</div>
+							<h3>Surcharge-Free ATMs</h3>
+							<p>Access your money without fees at thousands of ATMs nationwide through our partnerships with:</p>
+							<ul class="feature-list">
+								<li>CO-OP ATM Network (30,000+ locations)</li>
+								<li>Allpoint ATM Network (55,000+ locations)</li>
+								<li>7-Eleven stores</li>
+								<li>CVS Pharmacy locations</li>
+								<li>Walgreens stores</li>
+								<li>Target stores</li>
+							</ul>
+							<a href="#" class="cta-button">Find ATM</a>
+						</div>
+						<div class="card fade-in">
+							<div class="card-icon">💳</div>
+							<h3>ATM Services</h3>
+							<p>Our ATMs offer comprehensive banking services:</p>
+							<ul class="feature-list">
+								<li>Cash withdrawals</li>
+								<li>Balance inquiries</li>
+								<li>Deposits (cash and checks)</li>
+								<li>Account transfers</li>
+								<li>Mini statements</li>
+								<li>Cardless transactions (via mobile app)</li>
+							</ul>
+							<p><strong>Daily ATM Limits:</strong><br>
+							Withdrawals: $500<br>
+							Deposits: $2,000</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" style="background-color: white;">
+				<div class="container">
+					<h2 class="section-title fade-in">Frequently Asked Questions</h2>
+					<div class="grid grid-2">
+						<div class="card fade-in">
+							<h3>How do I become a member?</h3>
+							<p>Membership is open to anyone who lives, works, or attends school in our service area. Simply visit any branch with a valid ID and make a minimum deposit of $25 to open your membership share account.</p>
+						</div>
+						<div class="card fade-in">
+							<h3>What documents do I need to open an account?</h3>
+							<p>You'll need a valid government-issued photo ID (driver's license, passport, or state ID) and your Social Security number. For business accounts, additional documentation may be required.</p>
+						</div>
+						<div class="card fade-in">
+							<h3>How do I access online banking?</h3>
+							<p>You can enroll in online banking at any branch or by calling our member services line. Once enrolled, visit our website or download our mobile app to access your accounts 24/7.</p>
+						</div>
+						<div class="card fade-in">
+							<h3>What are your loan rates?</h3>
+							<p>Our rates are competitive and vary based on loan type, term, and creditworthiness. Visit our Services page for current rates or contact us for a personalized quote.</p>
+						</div>
+						<div class="card fade-in">
+							<h3>Do you offer notary services?</h3>
+							<p>Yes, we offer free notary services to our members at all branch locations during business hours. Please call ahead to ensure a notary is available.</p>
+						</div>
+						<div class="card fade-in">
+							<h3>How do I report a lost or stolen card?</h3>
+							<p>Contact us immediately at (555) 123-4567 or call our 24/7 card services line at (555) 123-CARD. You can also report it through our mobile app or online banking.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<h2 class="section-title fade-in">Important Information</h2>
+					<div class="grid grid-3">
+						<div class="card fade-in">
+							<div class="card-icon">🔒</div>
+							<h3>Security Notice</h3>
+							<p>We will never ask for your personal information, passwords, or PINs via email or phone. Always verify the identity of anyone requesting account information.</p>
+						</div>
+						<div class="card fade-in">
+							<div class="card-icon">🏦</div>
+							<h3>FDIC Insured</h3>
+							<p>Your deposits are federally insured up to $250,000 per depositor through the National Credit Union Administration (NCUA).</p>
+						</div>
+						<div class="card fade-in">
+							<div class="card-icon">🏠</div>
+							<h3>Equal Housing Lender</h3>
+							<p>We are committed to fair lending practices and equal housing opportunities for all qualified borrowers.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" style="background-color: white;">
+				<div class="container text-center">
+					<h2 class="section-title fade-in">Ready to Join?</h2>
+					<p class="section-subtitle fade-in">Become a member today and start experiencing the credit union difference.</p>
+					<div class="fade-in">
+						<a href="services.html" class="cta-button">View Services</a>
+						<a href="about.html" class="cta-button" style="margin-left: 1rem;">Learn More</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h4>Contact Info</h4>
+						<p>123 Main Street<br>
+						Anytown, ST 12345<br>
+						Phone: (555) 123-4567<br>
+						Email: info@unnamedcu.org</p>
+					</div>
+					<div class="footer-section">
+						<h4>Quick Links</h4>
+						<ul style="list-style: none;">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h4>Services</h4>
+						<ul style="list-style: none;">
+							<li><a href="services.html">Checking & Savings</a></li>
+							<li><a href="services.html">Loans</a></li>
+							<li><a href="services.html">Online Banking</a></li>
+							<li><a href="services.html">Investment Services</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h4>Member Resources</h4>
+						<ul style="list-style: none;">
+							<li><a href="#">Online Banking</a></li>
+							<li><a href="#">Mobile App</a></li>
+							<li><a href="#">Financial Education</a></li>
+							<li><a href="#">Member Support</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2024 Unnamed Credit Union. All rights reserved. | Member FDIC | Equal Housing Lender</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
