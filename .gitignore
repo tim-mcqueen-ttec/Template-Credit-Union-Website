@@ -299,3 +299,10 @@ pnpm-workspace.yaml
 # - Keep this .gitignore file updated
 # 
 # ============================================
+
+CLAUDE.md
+prompts/
+.wrangler/
+wrangler.toml
+node_modules/
+wrangler.jsonc

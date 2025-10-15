@@ -4,21 +4,29 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>About Us - Unnamed Credit Union</title>
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="/styles.css">
 	</head>
 	<body>
 		<a href="#main-content" class="skip-link">Skip to main content</a>
 		<header class="header">
 			<div class="nav-container">
 				<a href="index.html" class="logo">Unnamed Credit Union</a>
-				<nav role="navigation" aria-label="Main navigation">
-					<ul class="nav-menu">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="services.html">Services</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
+                <div class="nav-menu-container">
+					<nav role="navigation" aria-label="Main navigation">
+						<ul class="nav-menu">
+							<li><a href="/index.html">Home</a></li>
+							<li><a href="/about">About</a></li>
+							<li><a href="/services.html">Services</a></li>
+							<li><a href="/contact.html">Contact</a></li>
+						</ul>
+					</nav>
+					<nav role="navigation">
+						<ul class="sub-nav">
+							<li><a href="/about/organizational/our-history/">Our History</a></li>
+							<li><a href="/about/community/youth-center/" aria-current="page">Community Involvement</a></li>
+						</ul>
+					</nav>
+				</div>
 				<button class="mobile-menu-toggle">☰</button>
 			</div>
 		</header>
@@ -33,22 +41,19 @@
 
 			<section class="section">
 				<div class="container">
-					<h2 class="section-title fade-in">Our Story</h2>
-					<div class="grid grid-2">
-						<div class="fade-in">
-							<h3 class="text-primary">Founded on Community Values</h3>
-							<p>Unnamed Credit Union was founded in 1974 by a group of local teachers and community leaders who believed that financial services should serve people, not profit. What started as a small group of 50 members has grown into a thriving financial institution serving over 25,000 members across the region.</p>
-							<p>Our journey began with a simple philosophy: treat every member like family. This principle has guided us through five decades of growth, economic changes, and technological advances. Today, we remain committed to the same values that our founders established.</p>
-						</div>
-						<div class="fade-in">
-							<h3 class="text-primary">Member-Owned Difference</h3>
-							<p>As a credit union, we're owned by our members, not shareholders. This fundamental difference means that our profits are returned to members through better rates, lower fees, and improved services. Every decision we make is guided by what's best for our member-owners.</p>
-							<p>We believe that financial services should be accessible to everyone, regardless of their economic background. That's why we offer free financial education, low-cost loans, and savings programs designed to help our members achieve their financial goals.</p>
-						</div>
-					</div>
+					<h2 class="section-title fade-in">
+						<a href="organizational/our-history/index.html">Our History</a>
+					</h2>
 				</div>
 			</section>
 
+			<section class="section" style="background-color: white;">
+				<div class="container">
+					<h2 class="section-title fade-in">
+						<a href="community/youth-center/index.html">Community Involvement</a>
+					</h2>
+				</div>
+			</section>
 			<section class="section" style="background-color: white;">
 				<div class="container">
 					<h2 class="section-title fade-in">Our Mission & Values</h2>
@@ -207,6 +212,8 @@
 			</div>
 		</footer>
 
-		<script src="script.js"></script>
+		<script src="/script.js"></script>
+		<script src="/messenger.js"></script>
+		<script defer src="/messenger-plugin.js"></script>
 	</body>
 </html>

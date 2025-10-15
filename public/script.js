@@ -110,12 +110,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Active Navigation Link
 document.addEventListener('DOMContentLoaded', function() {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    // const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const currentPage = window.location.pathname;
     const navLinks = document.querySelectorAll('.nav-menu a');
-    
+    const subNavLinks = document.querySelectorAll('.sub-nav a');
+
     navLinks.forEach(link => {
-        const linkPage = link.getAttribute('href').split('/').pop();
-        if (linkPage === currentPage) {
+        const linkPage = link.getAttribute('href'); //.split('/').pop();
+        console.log(`Comparing link ${linkPage} with current page ${currentPage}`);
+        if (currentPage.startsWith(linkPage)) {
+            console.log(`Link ${linkPage} is active`);
+            link.classList.add('active');
+        }
+    });
+
+    subNavLinks.forEach(link => {
+        const linkPage = link.getAttribute('href');
+        const firstLinkPart = linkPage.split('/')[0];
+        if (linkPage === currentPage || linkPage === firstLinkPart) {
             link.classList.add('active');
         }
     });
